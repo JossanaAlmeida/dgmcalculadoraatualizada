@@ -158,7 +158,7 @@ def calcular_dgm(ki, s, fg, fc, i_ki, i_s, i_fg, i_fc):
 
 # --- 3. INTERFACE STREAMLIT ---
 
-st.set_page_config(page_title="Calculadora DGM Pro", page_icon="🔬", layout="wide")
+st.set_page_config(page_title="Calculadora DGM 2.0", page_icon="🔬", layout="wide")
 
 # Inicialização do Session State
 if 'tabelas_ki' not in st.session_state:
@@ -168,7 +168,7 @@ if 'csr_coeffs' not in st.session_state:
 if 'resultados' not in st.session_state:
     st.session_state.resultados = pd.DataFrame()
 
-st.title("🔬 Calculadora de Dose Glandular Média (DGM)")
+st.title("🔬 Calculadora de Dose Glandular Média (nova versão)")
 
 with st.sidebar:
     st.header("⚙️ Configuração")
@@ -310,3 +310,4 @@ if not st.session_state.resultados.empty:
 
 st.markdown("---")
 st.markdown("Desenvolvido por Jossana Almeida, com o auxilio de um modelo de linguagem.")
+
